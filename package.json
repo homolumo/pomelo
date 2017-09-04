@@ -1,6 +1,6 @@
 {
   "name": "@ejiaoji/pomelo",
-  "version": "0.1.9",
+  "version": "2.0.0",
   "homepage": "https://github.com/NetEase/pomelo",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "server"
   ],
   "dependencies": {
-    "@ejiaoji/pomelo-rpc": "^1.0.4",
+    "pomelo-rpc": "https://github.com/homolumo/pomelo-rpc.git#develop",
     "async": "^0.2.10",
     "bluebird": "^3.5.0",
     "cliff": "^0.1.10",
