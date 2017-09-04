@@ -27,7 +27,7 @@
     "server"
   ],
   "dependencies": {
-    "pomelo-rpc": "https://github.com/homolumo/pomelo-rpc.git#develop",
+    "pomelo-rpc": "git+https://github.com/homolumo/pomelo-rpc.git#develop",
     "async": "^0.2.10",
     "bluebird": "^3.5.0",
     "cliff": "^0.1.10",
