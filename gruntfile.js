@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         options: {
           reporter: 'spec',
           timeout: 5000,
-          require: 'coverage/blanket'
+          // require: 'coverage/blanket'
         },
         src: src
       },

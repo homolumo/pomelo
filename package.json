@@ -1,10 +1,10 @@
 {
   "name": "pomelo",
-  "version": "2.2.5",
+  "version": "2.0.3",
   "homepage": "https://github.com/NetEase/pomelo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NetEase/pomelo.git"
+    "url": "https://github.com/homolumo/pomelo"
   },
   "scripts": {
     "test": "grunt"
@@ -12,10 +12,12 @@
   "bugs": {
     "url": "https://github.com/NetEase/pomelo/issues"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/NetEase/pomelo#license"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/NetEase/pomelo#license"
+    }
+  ],
   "keywords": [
     "pomelo",
     "framework",
@@ -25,35 +27,40 @@
     "server"
   ],
   "dependencies": {
-    "socket.io": "1.7.2",
-    "async": "0.2.5",
-    "seq-queue": "0.0.5",
+    "async": "^0.2.10",
+    "bluebird": "^3.5.0",
+    "cliff": "^0.1.10",
+    "commander": "^2.10.0",
     "crc": "0.2.0",
-    "cliff": "0.1.8",
-    "mkdirp": "0.3.3",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.3.5",
+    "mqtt": "^0.3.13",
+    "node-bignumber": "^1.2.1",
+    "options": "0.0.6",
+    "pomelo-admin": "^1.0.0",
     "pomelo-loader": "0.0.6",
-    "pomelo-rpc": "1.0.7",
-    "pomelo-protocol": "0.1.6",
-    "pomelo-admin": "1.0.0",
-    "pomelo-logger": "0.1.7",
-    "pomelo-scheduler": "0.3.9",
-    "ws": "1.1.1",
-    "pomelo-protobuf": "0.4.0",
-    "node-bignumber": "1.2.1",
-    "commander": "2.0.0",
-    "mqtt": "0.3.9"
+    "pomelo-logger": "^0.1.7",
+    "pomelo-protobuf": "^0.4.0",
+    "pomelo-protocol": "^0.1.6",
+    "pomelo-rpc": "git+https://github.com/homolumo/pomelo-rpc.git#develop",
+    "pomelo-scheduler": "^0.3.9",
+    "seq-queue": "0.0.5",
+    "socket.io": "^1.7.4",
+    "toobusy-js": "^0.5.1",
+    "ultron": "^1.1.0",
+    "ws": "^1.1.4"
   },
   "bin": {
     "pomelo": "./bin/pomelo"
   },
   "devDependencies": {
-    "should": "3.3.1",
-    "mocha": ">=0.0.1",
-    "muk": ">=0.0.1",
+    "blanket": "~1.1.6",
     "grunt": "~0.4.2",
-    "grunt-mocha-test": "0.8.x",
     "grunt-contrib-clean": "0.5.x",
     "grunt-contrib-jshint": "~0.8.0",
-    "blanket": "~1.1.6"
+    "grunt-mocha-test": "0.8.x",
+    "mocha": ">=0.0.1",
+    "muk": ">=0.0.1",
+    "should": "3.3.1"
   }
 }
